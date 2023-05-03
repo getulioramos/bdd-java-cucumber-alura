@@ -41,28 +41,23 @@ Finalizado
 
 - O que é BDD (o Behaviour Driven Development)
   - BDD tenta melhorar a comunicação e colaboração
-  - BDD tenta aproximar o negócio e criar um entendimento melhor como a aplicação deveria funcionar
+  - BDD tenta aproximar o negócio e criar um entendimento melhor como a aplicação deveria funcionar isso nos vários tipos de testes:
+    - testes de unidade
+    - testes de integração
+    - testes ponta a ponta (end-to-end)
+    
+    Para melhorar a comunicação nos testes e o entendimento das funcionalidades. O QA trabalhando junto com os desenvolvedores e com os caras do negócio, escrevem isso num documento de texto, seguindo um pequeno padrão de cenários
 
-- Existem vários tipos e níveis de testes, como por exemplo:
-  - testes de unidade
-  - testes de integração
-  - testes ponta a ponta (end-to-end)
+ou seja, você coloca isso dentro de um “.feature” seguindo a estrutura que o Gherkin exige, seguindo essas palavras chaves, mas que é bem perto do que usamos.
 
+ Feito isso, você já consegue chamar isso com o Cucumber para escrever  Steps.  Então aquela ideia do TDD de test first, primeiro fazer o teste, aqui é a raiz, é até mais forte ainda, porque faz parte do mundo de negócio definir isso e o desenvolvedor depois só “segue”, esses critérios de aceitação.
 
-- Como integrar a biblioteca Cucumber na aplicação
+Vimos também todos os detalhes de implementação no código, como escrever, como conectar as coisas usando os exemplos, os Data Tables, como escrever esses métodos, como usar tags e contextos também, no final.
+
+Aprendemos também como integrar a biblioteca Cucumber na aplicação
 - Cucumber pode ser inicializado a partir do junit4 (@RunWith)
-
-- Os arquivos .feature são analisados pelo Gherkin e Cucumber
-  - Gerkin é uma linguagem para definir os .feature
-  - Cucumber gera e roda os passos (steps) associados ao .feature
 
 - Dentro do .feature escrevemos a funcionalidade e os critérios de aceitação
 - Um critério de aceitação segue a estrutura de um teste (passos ou steps)
-  - os passos são Given-When-Then ou Dado-Quando-Entao
-- Cada passo será implementado por um método anotado (step)
-- Um arquivo .feature pode ter vários cenários e passos (steps)
-- Os métodos associado aos passos são reaproveitados entre cenários
-  - podemos passar parâmetros do cenário ao método
-- Cucumber possui anotações para inicializar (@Before) e finalizar (@After) o cenários
-  - os métodos anotados com @Before e @After são chamados de Hooks
-  - cuidado, pois os Hooks não são visíveis no arquivo .feature
+  - os passos são Given-When-Then ou Dado-Quando-Entao.
+
