@@ -46,15 +46,16 @@ Finalizado
     - testes de integração
     - testes ponta a ponta (end-to-end)
     
-    Para melhorar a comunicação nos testes e o entendimento das funcionalidades. O QA trabalhando junto com os desenvolvedores e com os caras do negócio, escrevem isso num documento de texto, seguindo um pequeno padrão de cenários
+ Para melhorar a comunicação nos testes e o entendimento das funcionalidades. O QA trabalhando junto com os desenvolvedores e com os caras do negócio, escrevem isso num documento de texto, seguindo um pequeno padrão de cenários
 
 ou seja, você coloca isso dentro de um “.feature” seguindo a estrutura que o Gherkin exige, seguindo essas palavras chaves, mas que é bem perto do que usamos.
 
  Feito isso, você já consegue chamar isso com o Cucumber para escrever  Steps.  Então aquela ideia do TDD de test first, primeiro fazer o teste, aqui é a raiz, é até mais forte ainda, porque faz parte do mundo de negócio definir isso e o desenvolvedor depois só “segue”, esses critérios de aceitação.
 
-Vimos também todos os detalhes de implementação no código, como escrever, como conectar as coisas usando os exemplos, os Data Tables, como escrever esses métodos, como usar tags e contextos também, no final.
+Vimos todos os detalhes de implementação no código, como escrever, como conectar as coisas usando os exemplos, os Data Tables, como escrever esses métodos, como usar tags e contextos também, no final.
 
-Aprendemos também como integrar a biblioteca Cucumber na aplicação
+Aprendemos como: 
+- Integrar a biblioteca Cucumber na aplicação
 - Cucumber pode ser inicializado a partir do junit4 (@RunWith)
 
 - Dentro do .feature escrevemos a funcionalidade e os critérios de aceitação
